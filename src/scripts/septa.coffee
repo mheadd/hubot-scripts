@@ -1,16 +1,15 @@
-# SEPTA Bus & Trolley schedule
+# Allows Hubot to query the SEPTA bus & trolley schedule
+# 
+# septa me <stopid> - Returns the next 4 scheduled bus/trolleys at specified station.
+# septa me <stopid> <routeid> - Returns only bus/trolleys at station for specified route.
+# septa me <stopid> <routeid> <direction> - Returns only inbound/outbound routes
 #
-# Uses the SEPTA SMS API - http://www3.septa.org/hackathon/
-#
-# septa me (StopID)
-# septa me 17842
-#
-# septa me (StopID) (RouteID)
-# septa me 17842 17
-#
-# septa me (StopID) (RouteID) (Direction)
-# septa me 17842 17 o
-#
+# septa me 17482 17 o - Returns
+# 			 Chew Av & Washington Ln
+#			  Rt. 18 @ 3:49p 
+#			  Rt. 18 @ 3:49p 
+#			  Rt. 18 @ 3:59p 
+#			  Rt. 18 @ 4:06p 
 
 module.exports = (robot) ->
 
